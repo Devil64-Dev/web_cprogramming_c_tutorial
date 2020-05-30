@@ -1,0 +1,116 @@
+/* Default styles for page */
+body{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif; /*Default font family */
+}
+
+/* Styles for header */
+header{
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  background-color: #2196f3;
+  box-shadow: 1px 1px 4px rgba(100, 100, 100, 0.9);
+}
+/* Styles for page title or lesson title */
+#unit_name{
+  margin: 10px;
+  display: inline;
+  height: 100%;
+  color: white;
+  float: left;
+  padding-left: 1em;
+}
+
+/* Styles for next and previous button */
+#main_nav{
+  height: 100%;
+  text-align: right;
+  margin: 13px 1em 13px 0;
+  float: right;
+  right: 0;
+}
+
+#main_nav button{
+  color: #eeeeee;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  border-radius: 12px;
+  background-color: inherit;
+  padding: 10px 14px;
+}
+#main_nav button:hover{
+  background-color: #459de3;
+}
+
+/* Parent of web content styles*/
+#main{
+  clear: both;
+  padding-top: 62px;
+  align-content: center;
+}
+
+/* Styles for main page content */
+.content{
+  width: 65%;
+  margin: 10px 16px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  float: left;
+}
+#lesson_title{
+  font-family: "Droid Sans", sans-serif;
+  margin: 15px 0;
+  color: rgba(30, 30, 30, 0.6);
+}
+#lesson_description{
+  margin-top: 0;
+  padding: 0 16px 0;
+  clear: both;
+  color: rgba(10, 10, 10, 0.9);
+  line-height: 20px;
+}
+
+/* Styles for main aside */
+.aside{
+
+  right: 0;
+  border-left: 30px solid rgba(180, 180, 180, 0.5);
+  box-sizing: border-box;
+  float: right;
+  padding: 16px 16px;
+}
+/* Generic styles for list */
+ul{ list-style: none;}
+ol li{ padding: 3px 0;}
+ol li a{
+  text-decoration: none;
+  color: black;
+  padding: 10px 6px;
+  font-size: 16px;
+}
+
+/* List aside */
+.aside ol li{
+  padding: 6px 0;
+}
+/* Link and items styles */
+.aside ol li:hover{
+  border-bottom-right-radius:  10px;
+  border-top-right-radius: 10px;
+  background-color: rgba(120, 120, 120, 0.5);
+}
+.aside ol li a{
+  border-left: 10px hidden black;
+}
+/* Aside title */
+.aside h1{
+  margin: 0;
+  color: rgba(50, 50, 50, 0.8);
+}
+
+.aside ol .lesson_active{
+  color: #0f7fd7;
+}
