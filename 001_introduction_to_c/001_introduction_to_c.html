@@ -1,65 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8"/>
-    <title>Introducción a C</title>
-    <link rel="stylesheet" type="text/css" href="../assets/default.css"/>
-
-    <script src="../assets/script.js"></script>
-  </head>
-  <body onload="loadAside()" onresize="loadAside()">
-    <header id="header">
-      <h1 id="unit_name">Introducción y características básicas de C</h1>
-      <div id="main_nav">
-        <button>Previo</button>
-        <button>Siguiente</button>
-      </div>
-    </header>
-    <div id="main">
-      <div class="content" id="main_content">
-        <h1 id="lesson_title">Introducción a C</h1>
-        <p id="lesson_description">Este tutorial esta diseñado para ser una introducción independiente a C, incluso si nunca antes
-          has programado. Sin embargo C++ es un lenguaje mas moderno, si no tienes claro si debes aprender C o C++, Se recomienda
-          el tutorial de C++ en su lugar, el cual también es diseñado para personas que no han programado nunca. Sin embargo, si
-          no desea algunas de las funciones avanzadas de C++ o simplemente desea aprender C en lugar de C++, entonces este es el
-          sitio para ti.
-        </p>
-	<h2 id="lesson_sub">Configuración: Encontrando un compilador</h2>
-        <p class="description_content">
-          Las primera cosa que necesitas hacer, antes de empezar en C, es estar seguro que tienes un compilador. ¿Que es un compilador,
-          te preguntaras? Un compilador convierte el programa que escribes en un ejecutable que tu computador actualmente puede
-          entender y correr. Si estas tomando un curso, problamente te proporcionan uno a travéz de tu escuela. Si estas empezando por
-          tu propia cuenta, la mejor apuesta es usar <span>Code::Blocks con MinGW.</span> Si estas en Linux, puedes usar
-          </span>GCC</span>, y su estas en Mac OS X, puedes usar XCode. Si aún no lo ha echo, continúne y configure un compilador, lo
-          necesitará para el resto del tutorial.
-        </p>
-        <h2 class="lesson_sub">Introducción a C</h2>
-        <p class="lesson_description">
-          Cada programa C completo empiza dentro de una función llamada <q>main</q>. Una función es una simple collección de comandos
-          o declaraciones que hacen <q>algo</q>. La función <mark>main</mark> siempre es llamada cuando el programa se empieza a ejecutar.
-          Desde <mark>main</mark>, nosotros podemos llamar otras funciónes, ya sean escritas por nosotros mismos o por otros o usar
-          funciones incorporadas en lenguaje. Para acceder a las funciones estandar que vienen con tu compilador, necesitas incluir
-          una cabezera con la directiva <mark class="code">#include</mark>. Lo que hace esto es tomar todo en el encabezado y copiarlo
-          dentro de su programa. Observemos un programa trabajando:
-        </p>
-      </div>
-      <div class="aside" id="main_aside">
-        <h1>Unidad 1</h1>
-        <ol>
-          <li class="lesson_active"><a href="#" class="lesson_active">Introducción a C </a> </li>
-          <li><a href="#">Declaraciones If</a> </li>
-          <li><a href="#">Bucles en C</a> </li>
-          <li><a href="#">Funciones y Organización del programa</a> </li>
-          <li><a href="#">Caso switch</a> </li>
-        </ol>
-      </div>
-
-
-    </div>
-  <!--<script>
-    document.addEventListener("resize", function () {
-      document.getElementById("header").style.background = "#000000";
-    });
-  </script>-->
-  </body>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Introducción a C</title>
+        <link rel="stylesheet" type="text/css" href="../assets/default.css"/>
+        <link rel="stylesheet" type="text/css" href="../assets/lesson_style.css">
+        <script src="../assets/script.js"></script>
+    </head>
+    <body onload="loadAside()" onresize="loadAside()">
+        <header id="header">
+            <h1 id="unit_name">Introducción y características básicas de C</h1>
+            <div id="main_nav">
+                <button>Previo</button>
+                <button>Siguiente</button>
+            </div>
+        </header>
+        <div id="main">
+            <div class="content" id="main_content">
+                <!-- main lesson -->
+                <div class="main_lesson">
+                    <h1 id="lesson_title">Introducción a C</h1>
+                    <p id="lesson_description">Este tutorial esta diseñado para ser una introducción independiente a C,
+                        incluso si nunca antes has programado. Sin embargo C++ es un lenguaje mas moderno, si no tienes
+                        claro si debes aprender C o C++, Se recomienda el tutorial de C++ en su lugar, el cual también
+                        es diseñado para personas que no han programado nunca. Sin embargo, si no desea algunas de las
+                        funciones avanzadas de C++ o simplemente desea aprender C en lugar de C++, entonces este es el
+                        sitio para ti.
+                    </p></div>
+                <div class="sub_lesson">
+                    <h2 class="lesson_sub">Configuración: Encontrando un compilador</h2>
+                    <p class="description_content">
+                        Las primera cosa que necesitas hacer, antes de empezar en C, es estar seguro que tienes un
+                        compilador.
+                        ¿Que es un compilador, te preguntaras? Un compilador convierte el programa que escribes en un
+                        ejecutable que tu computador actualmente puede entender y correr. Si estas tomando un curso,
+                        probablemente te proporcionan uno a través de tu escuela. Si estas empezando por
+                        tu propia cuenta, la mejor apuesta es usar <span>Code::Blocks con MinGW.</span> Si estas en
+                        Linux,
+                        puedes usar <span>GCC</span>, y su estas en Mac OS X, puedes usar XCode. Si aún no lo ha echo,
+                        continúe y configure un compilador, lo necesitará para el resto del tutorial.
+                    </p>
+                </div>
+                <div class="sub_lesson">
+                    <h2 class="lesson_sub">Introducción a C</h2>
+                    <p class="description_content">
+                        Cada programa C completo empieza dentro de una función llamada <mark>main</mark>.
+                        Una función es una simple colección de comandos o declaraciones que hacen <q>algo</q>.
+                        La función <mark>main</mark> siempre es llamada cuando el programa se empieza a ejecutar.
+                        Desde <mark>main</mark>, nosotros podemos llamar otras funciones, ya sean escritas por
+                        nosotros mismos o por otros o usar funciones incorporadas en lenguaje. Para acceder a las
+                        funciones estándar que vienen con tu compilador, necesitas incluir una cabecera con la
+                        directiva <mark class="code">#include</mark>. Lo que hace esto es tomar todo en el encabezado
+                        y copiarlo dentro de su programa. Observemos un programa trabajando:
+                    </p>
+                </div>
+            </div>
+            <div class="aside" id="main_aside">
+                <h1>Unidad 1</h1>
+                <ol>
+                    <li class="lesson_active"><a href="#" class="lesson_active">Introducción a C </a> </li>
+                    <li><a href="#">Declaraciones If</a> </li>
+                    <li><a href="#">Bucles en C</a> </li>
+                    <li><a href="#">Funciones y Organización del programa</a> </li>
+                    <li><a   href="#">Caso switch</a> </li>
+                </ol>
+            </div>
+        </div>
+        <!--<script>
+            document.addEventListener("resize", function () {
+                document.getElementById("header").style.background = "#000000";
+             });
+        </script>-->
+    </body>
 </html>
