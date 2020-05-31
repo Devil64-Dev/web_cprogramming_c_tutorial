@@ -7,6 +7,8 @@
         <link rel="stylesheet" type="text/css" href="assets/default.css"/>
         <!-- Common styles for lessons -->
         <link rel="stylesheet" type="text/css" href="assets/lesson_style.css">
+        <!-- Common styles for code content -->
+        <link rel="stylesheet" type="text/css" href="assets/code_style.css">
         <script src="assets/script.js"></script>  <!-- Common script -->
     </head>
     <body onload="loadAside()" onresize="loadAside()">
@@ -39,7 +41,43 @@
                     <h2 class="lesson_sub">Another sub-lesson</h2>
                     <p class="description_content">Another sub-lesson content</p>
                     <div class="code_content">
-
+                        <table class="table_code">
+                            <tr>
+                                <td class="line_number">1</td>
+                                <td class="multi_comment">/* comment */</td>
+                            </tr>
+                            <tr>
+                                <td class="line_number">2</td>
+                                <td class="code_line">
+                                    <span class="special_word_one">#include</span>
+                                    <span class="header_include">&lt;header.h&gt;</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="line_number">3</td>
+                                <td class="code_line">
+                                    <span class="special_word_one">int</span>
+                                    <span class="var_name">main</span>(){
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="line_number">4</td>
+                                <td class="code_line">
+                                    <pre class="code_pre-styled">   </pre>
+                                    <span class="function_call">printf</span>(<span class="string">"Hello World!"</span>)<span>;</span>
+                                </td>
+                            </tr>
+                            <td class="line_number">5</td>
+                            <td class="code_line">
+                                <pre class="code_pre-styled">   </pre>
+                                <span class="special_word_one">return</span>
+                                <span class="number">0</span><span>;</span> </pre>
+                            </td>
+                            <tr>
+                                <td class="line_number">6</td>
+                                <td class="code_line">}</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
