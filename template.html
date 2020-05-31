@@ -1,10 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Page Title</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Page Title</title>
+        <!-- Common styles for web page -->
+        <link rel="stylesheet" type="text/css" href="assets/default.css"/>
+        <!-- Common styles for lessons -->
+        <link rel="stylesheet" type="text/css" href="assets/lesson_style.css">
+        <script src="assets/script.js"></script>  <!-- Common script -->
+    </head>
+    <body onload="loadAside()" onresize="loadAside()">
+        <!-- Header
+            header includes lesson title and shortcut buttons for next-prev -->
+        <header id="header">
+            <h1 id="unit_name">Lesson title</h1>  <!-- Lesson title -->
+            <!-- Nav buttons 'next-prev' -->
+            <div id="main_nav">
+                <button>Previo</button>  <!-- Prev lesson -->
+                <button>Siguiente</button>  <!-- Next lesson -->
+            </div>
+        </header>  <!-- End header -->
+        <!-- Parent for all content -->
+        <div id="main">
+            <!-- Parent for main web page content -->
+            <div class="content" id="main_content">
+                <div class="main_lesson">
+                    <!-- main lesson -->
+                    <h1 id="lesson_title">First lesson name</h1>
+                    <p id="lesson_description">Lesson description here</p>
+                </div>
+                <div class="sub_lesson">
+                    <!-- sub-lesson -->
+                    <h2 id="lesson_sub">Second and others sub-lessons name</h2>
+                    <p class="description_content">Description for sub-lessons and others</p>
+                </div>
+                <div class="sub_lesson">
+                    <!-- another sub-lesson -->
+                    <h2 class="lesson_sub">Another sub-lesson</h2>
+                    <p class="description_content">Another sub-lesson content</p>
+                    <div class="code_content">
 
-</body>
+                    </div>
+                </div>
+            </div>
+
+            <!-- aside content -->
+            <div class="aside" id="main_aside">
+                <h1>Unit name</h1>  <!-- unit name -->
+                <ol>  <!-- refs or links -->
+                    <li class="lesson_active"><a href="#" class="lesson_active">Lesson name </a> </li>
+                    <li><a href="#">Other lesson</a> </li>
+                    <li><a href="#">Lesson three</a> </li>
+                    <li><a href="#">Other lesson</a> </li>
+                    <li><a href="#">Other lesson</a> </li>
+                </ol>
+            </div>
+        </div>
+    </body>
 </html>
