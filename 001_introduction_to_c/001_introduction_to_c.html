@@ -5,6 +5,7 @@
         <title>Introducción a C</title>
         <link rel="stylesheet" type="text/css" href="../assets/default.css"/>
         <link rel="stylesheet" type="text/css" href="../assets/lesson_style.css">
+        <link rel="stylesheet" type="text/css" href="../assets/code_style.css">
         <script src="../assets/script.js"></script>
     </head>
     <body onload="loadAside()" onresize="loadAside()">
@@ -53,6 +54,55 @@
                         directiva <mark class="code">#include</mark>. Lo que hace esto es tomar todo en el encabezado
                         y copiarlo dentro de su programa. Observemos un programa trabajando:
                     </p>
+                    <div class="code_content">  <!-- parent for code -->
+                        <table class="table_code">  <!-- table for lines and line numbers -->
+                            <!-- full line -->
+                            <tr>
+                                <td class="line_number">1</td>  <!-- line number -->
+                                <td class="multi_comment">/* comment */</td>  <!-- line for code -->
+                            </tr>
+                            <tr>
+                                <td class="line_number">2</td>
+                                <td class="code_line">
+                                    <span class="special_word_one">#include</span>
+                                    <span class="header_include">&lt;header.h&gt;</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="line_number">3</td>
+                                <td class="code_line">
+                                    <span class="special_word_one">int</span>
+                                    <span class="func_name">main</span>(){
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="line_number">4</td>
+                                <td class="code_line">
+                                    <pre class="code_pre-styled">   </pre>
+                                    <span class="function_call">printf</span>(<span class="string">"Hello World!<span class="break_line">\n</span>"</span>)<span>;</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="line_number">5</td>
+                                <td class="code_line">
+                                    <pre class="code_pre-styled">   </pre>
+                                    <span class="function_call">getChar</span>();
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="line_number">6</td>
+                                <td class="code_line">
+                                    <pre class="code_pre-styled">   </pre>
+                                    <span class="special_word_one">return</span>
+                                    <span class="number">0</span><span>;</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="line_number">7</td>
+                                <td class="code_line">}</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
             <div class="aside" id="main_aside">
