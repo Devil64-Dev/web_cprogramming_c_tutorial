@@ -6,18 +6,14 @@
     background-color: rgba(50, 50, 50, 0.1);
     margin: 10px 0 16px 16px;
 }
-.table_code{
-    border-collapse: collapse;
-}
+.table_code{ border-collapse: collapse;}
 .line_number{
     user-select: none;
     padding-left: 8px;
     border-right: 5px solid rgba(20, 20, 20, 0.6);
     padding-right: 12px;
 }
-.code_line, .multi_comment{
-    padding-left: 10px;
-}
+.code_line, .multi_comment{ padding-left: 10px;}
 /* colors */
 /* special key-works */
 /* function type and include */
