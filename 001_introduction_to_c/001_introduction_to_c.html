@@ -79,7 +79,8 @@
                                 <td class="line_number">4</td>
                                 <td class="code_line">
                                     <pre class="code_pre-styled">   </pre>
-                                    <span class="function_call">printf</span>(<span class="string">"Hello World!<span class="break_line">\n</span>"</span>)<span>;</span>
+                                    <span class="function_call">printf</span>(<span class="string">"Hello
+                                    World!<span class="break_line">\n</span>"</span>)<span>;</span>
                                 </td>
                             </tr>
                             <tr>
@@ -103,6 +104,43 @@
                             </tr>
                         </table>
                     </div>
+                    <p class="description_content">
+                        Vamos a mirar los elementos de el programa. El <mark class="code">#include</mark> es una directiva del
+                        <q>preprocesador</q> que le dice al compilador que coloque el código desde el enzabezado llamado 
+                        <mark>stdio.h</mark> dentro de tu programa antes de crear el ejecutable. Al incluir archivos
+                        de encabezado, puedes ganar acceso a muchas funciones diferentes: las funciones <mark class="code">printf</mark>
+                        y <mark class="code">getChar</mark> estan incluidas en <mark>stdio.h</mark>.
+                    </p>
+                    <p class="description_content">
+                        La siguiente línea importante es <mark class="code">int main()</mark>. Esta línea le dice al compilador que hay
+                        una función llamada <mark>main</mark>, y que la función retorna un entero, por lo tanto <mark>int</mark>. Las 
+                        <q>llaves</q> (<mark class="code">{</mark> y <mark class="code">}</mark>) señalan el inicio y el fin de
+                        funciones y otros bloques de código. Si has programado en Pascal, conoceras esto como 
+                        <mark class="code">BEGIN</mark> y <mark class="code">END</mark>. Incluso si no has programado en Pascal, esta es
+                        una buena manera de pensar acerca de su significado.<br/>
+                    </p>
+                    <p class="description_content">
+                        La función <mark class="code">prinf</mark> el la manera estándar en C de mostar la salida en pantalla. Las
+                        comillas le dicen al compilador que quieres mostar un <mark>string</mark> o cadena literal tal como esta (casi).
+                        La secuencia <mark class="code">'\n'</mark> es tratada en realizad como un solo caracter que representa una 
+                        nueva línea (hablaremos acerca de esto mas tarde con mas detalle); para inciar, solo recuerca que hay unas pocas
+                        secuencias que, cuando aparecen en una <mark>string</mark> o cadena literal, en realizad no son mostradas
+                        literalmente por <mark class="code">printf</mark> y que <mark class="code">'\n'</mark> es una de estas. El
+                        efecto actual de <mark class="code">'\n'</mark> es mover el cursor en la pantalla a la siguiente línea. Observe
+                        el punto y coma: le dice al compilador que estas al final de un comando, como una llamada a un función. Veras que 
+                        el punto y coma '<mark>;</mark>' se usa para terminar muchas líneas en C.  
+                    </p>
+                    <p class="description_content">
+                        El siguiente comando es <mark class="code">getChar()</mark>. Este es otra llamada a una función: lee en un solo
+                        carácter y espera a que el usuario presione enter antes de leer el carácter. Incluyendo esa linea te da tiempo
+                        para ver el programa en ejecución.
+                    </p>
+                    <p class="description_content">
+                        Finalmente, al final del programa, devolvemos un valor desde <mark>main</mark> al sistema operativo usando la
+                        declaración <mark class="code">return</mark>. Este valor de retorno es importante ya que puede usarse para
+                        decirle al systema operativo si nuestro programa tuvo éxito o no. Un valor de retorno 0 significa que la
+                        ejecución del programa tuvo exito.
+                    </p>
                 </div>
             </div>
             <div class="aside" id="main_aside">
@@ -116,10 +154,5 @@
                 </ol>
             </div>
         </div>
-        <!--<script>
-            document.addEventListener("resize", function () {
-                document.getElementById("header").style.background = "#000000";
-             });
-        </script>-->
     </body>
 </html>
