@@ -26,9 +26,13 @@
 .code_pre-styled{ display: inline;}
 .special_word_one, .return{ font-weight: bold;}
 .header_include{ color: #24a7ad;}
-.string{ color: #11990c;}
+.operator{ color: #454545}
+.string{ color: #10af0a;}
 .number{ color: #401e90;}
-.var_name{ color: #303131;}
+.func_name{ color: #4e504e;}
+.break_line{ color: #ad0a01; font-weight: bold;}
+.var_name{ color: #e84105; font-weight: bold;}
+.var_name_use{ color: #f8571d; font-weight: bold;}
 .multi_comment{ color: rgba(20, 20, 20, 0.5);}
 /* C conventions */
 /* include an header file */
